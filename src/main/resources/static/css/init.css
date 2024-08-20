@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+ul{list-style-type:none;}
+a{text-decoration:none; color: inherit;}
+
+#wrap{
+    width:1000px;
+    margin:50px auto;
+    display:flex;
+    position:relative;
+    padding-top:50px;
+    overflow: hidden;
+}
+#header{
+    width:200px;
+    padding:50px 10px;
+    background: aquamarine;
+    color:white;
+    position:relative;
+    left:0;
+}
+#nav{
+    width:100%;
+}
+#menuList{
+    padding:20px 0;
+}
+.menu{
+    line-height:37px;
+    font-size:20px;
+    text-align:center;
+    height:37px;
+}
+.menu:hover{
+    background: #e54f4f;
+    border:2px solid #aaa;
+}
+/* 메뉴 아이콘 기능에 필요한 css */
+#menuIcon{
+    position:absolute;
+    top:0; left:20px;
+}
+#header.slide{
+    width:0;
+    left:-200px;
+}
+#main.full{
+    width:100%;
+}
+#main{
+    width:800px;
+}
+img{width:100%; display:block;}
+#container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+
+
+}
+
+.items{
+    height:200px;
+}
+.items:nth-child(4){grid-column: 1/4;}
+.items:nth-child(8){grid-column: 1/3;}
