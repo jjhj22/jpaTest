@@ -57,7 +57,7 @@ img{width:100%; display:block;}
 #container{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    gap:11px;
+    gap:10px;
 
 
 }
